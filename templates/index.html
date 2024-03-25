@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <!-- META TAGS -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- RESPONSIVE -->
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximun-scale=1.0, minimum-scale=1.0">
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.5/css/swiper.min.css'>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='/css/style.css') }}">
+    <!-- TITULO -->
+    <title>Hikuri API</title>
+</head>
+
+<body>
+    <div class="blog-slider">
+        <div class="blog-slider__wrp swiper-wrapper">
+            <div class="blog-slider__item swiper-slide">
+                <div class="blog-slider__img">
+                    <img src="https://cdn.discordapp.com/attachments/859190478133657624/1206323149134631033/image.png?ex=65db96fb&is=65c921fb&hm=137147391f7223c0e4abfb49e0edcc36b3d4b0706b6405fd6161454cee867a7a&"
+                        alt="">
+                </div>
+                <div class="blog-slider__content">
+                    <span class="blog-slider__code">Hikuri API</span>
+                    <div class="blog-slider__title">¿Quiénes Somos?</div>
+                    <div class="blog-slider__text">Hikuri es una plataforma innovadora que brinda acceso a una extensa
+                        base de datos de plantas medicinales utilizadas en la herbolaria tradicional mexicana.
+                    </div>
+                    <div class="blog-slider__text">Con Hikuri, los desarrolladores pueden acceder fácilmente a
+                        información detallada sobre una amplia variedad de hierbas, incluyendo sus nombres comunes y
+                        científicos, usos terapéuticos, preparaciones recomendadas.
+                    </div>
+                </div>
+            </div>
+            <div class="blog-slider__item swiper-slide">
+                <div class="blog-slider__img">
+                    <img src="https://www.elheraldodetabasco.com.mx/doble-via/ecologia/vn9z01-plantas/ALTERNATES/LANDSCAPE_1140/Plantas"
+                        alt="">
+                </div>
+                <div class="blog-slider__content">
+                    <span class="blog-slider__code">Hikuri API</span>
+                    <div class="blog-slider__title">Registros</div>
+                    <div class="blog-slider__text">Haz click en el botón para ver todos los registros de plantas
+                        disponibles en este momento</div>
+                    <a href="{{ url_for('bandeja') }}" class="blog-slider__button">Ver Registros</a>
+                </div>
+            </div>
+            <div class="blog-slider__item swiper-slide">
+                <div class="blog-slider__img">
+                    <img src="https://img.europapress.es/fotoweb/fotonoticia_20180114081432_1200.jpg" alt="">
+                </div>
+                <div class="blog-slider__content">
+                    <span class="blog-slider__code">Hikuri API</span>
+                    <div class="blog-slider__title">¿Cómo Implementarlo?</div>
+                    <div class="blog-slider__text">Si deseas utilizar nuestra API en tu propia aplicacón puedes leer
+                        nuestra documentación para conocer como lo puedes hacer.</div>
+                    <a href="{{ url_for('documentacion') }}" class="blog-slider__button">Leer documentación</a>
+                </div>
+            </div>
+            <div class="blog-slider__item swiper-slide">
+                <div class="blog-slider__img">
+                    <img src="https://www.qlsproctor.com.au/wp-content/uploads/2020/06/img20200630_Proctor_GettingFeedback.jpg"
+                        alt="">
+                </div>
+                <div class="blog-slider__content">
+                    <span class="blog-slider__code">Hikuri API</span>
+                    <div class="blog-slider__title">¿Qué te pareció?</div>
+                    <div class="blog-slider__text">Dejanos un comentario y cuentanos que piensas de nuestro proyecto
+                        en
+                        la siguiente sección</div>
+                    <a href="{{ url_for('comentarios') }}" class="blog-slider__button">Comentar</a>
+                </div>
+            </div>
+        </div>
+        <div class="blog-slider__pagination"></div>
+    </div>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.5/js/swiper.min.js'></script>
+    <script src="/static/javascript/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <!-- META TAGS -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- RESPONSIVE -->
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximun-scale=1.0, minimum-scale=1.0">
+    <!-- BOOTSTRAP CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.5/css/swiper.min.css'>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='/css/style.css') }}">
+    <!-- TITULO -->
+    <title>Documentación | Hikuri API</title>
+</head>
+
+<body>
+    <div class="container mb-5 mt-5">
+        <div class="card shadow bg">
+            <div class="card-body">
+                <span class="blog-slider__code">Hikuri API</span>
+                <div class="blog-slider__title">Documentación</div>
+                <p class="text-justify">Para implementar nuestra API en tu propia aplicación puedes seguir estos
+                    pasos:
+                </p>
+                <p class="text-justify">Utiliza la URL `https://hikuri-cfcb505eb388.herokuapp.com/plantas` para
+                    obtener el JSON que contiene la información de todas las plantas.
+                </p>
+                <p class="text-justify">Si necesitas mostrar detalles específicos de una planta, puedes utilizar
+                    la URL `https://hikuri-cfcb505eb388.herokuapp.com/plantas/un_numero`, donde `un_numero` es
+                    el ID de la planta que deseas buscar.
+                </p>
+                <p class="text-justify">Si deseas mostrar plantas de una región específica, puedes utilizar la
+                    URL `https://hikuri-cfcb505eb388.herokuapp.com/plantas/un_estado`, donde `un_estado` es el
+                    estado de México que deseas buscar.
+                </p>
+                <p class="text-justify">Una vez que hayas obtenido los datos de la API, puedes integrarlos en tu
+                    aplicación para mostrarlos en una tabla. Aquí hay una descripción general de cómo podrías
+                    implementarlo:
+                </p>
+                <p class="text-justify">- Obtener los datos de la API: Utiliza bibliotecas como requests en
+                    Python para hacer solicitudes HTTP a la API y obtener los datos en formato JSON.
+                </p>
+                <p class="text-justify">- Procesar los datos: Una vez que hayas obtenido los datos de la API,
+                    procesa el JSON para extraer la información relevante, como el nombre de la planta, su
+                    descripción, su ubicación, etc.
+                </p>
+                <p class="text-justify">- Mostrar los datos en una tabla: Utiliza HTML y CSS para crear una
+                    tabla en tu aplicación web donde puedas mostrar los datos de las plantas. Puedes usar
+                    bibliotecas de frontend como Bootstrap para darestilo a la tabla y hacerla más atractiva
+                    visualmente.
+                </p>
+                <p class="text-justify">- Dinamismo: Si deseas que la tabla sea dinámica, puedes utilizar
+                    JavaScript para manipular los datos y actualizar la tabla sin tener que recargar la página
+                    completa cada vez que se obtienen nuevos datos de la API.
+                </p>
+                <p class="text-justify">- Paginación y búsqueda: Si tienes una gran cantidad de datos, considera
+                    implementar funcionalidades de paginación y búsqueda para que los usuarios puedan encontrar
+                    fácilmente la información que están buscando.
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
